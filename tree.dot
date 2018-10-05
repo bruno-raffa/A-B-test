@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="node #0\ncountry <= 9.5\nsamples = 100.0%\nvalue = [0.462, 0.538]\nclass = TEST Group", fillcolor="#399de524"] ;
+1 [label="node #1\ncountry <= 3.5\nsamples = 75.7%\nvalue = [0.495, 0.505]\nclass = TEST Group", fillcolor="#399de505"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\nbrowser <= 4.5\nsamples = 56.3%\nvalue = [0.501, 0.499]\nclass = Control Group", fillcolor="#e5813901"] ;
+1 -> 2 ;
+3 [label="node #3\nsamples = 50.4%\nvalue = [0.5, 0.5]\nclass = TEST Group", fillcolor="#399de500"] ;
+2 -> 3 ;
+4 [label="node #4\nsamples = 5.9%\nvalue = [0.509, 0.491]\nclass = Control Group", fillcolor="#e5813909"] ;
+2 -> 4 ;
+5 [label="node #5\ncountry <= 4.5\nsamples = 19.4%\nvalue = [0.48, 0.52]\nclass = TEST Group", fillcolor="#399de514"] ;
+1 -> 5 ;
+6 [label="node #6\nsamples = 1.0%\nvalue = [0.1, 0.9]\nclass = TEST Group", fillcolor="#399de5e3"] ;
+5 -> 6 ;
+7 [label="node #7\nsamples = 18.3%\nvalue = [0.501, 0.499]\nclass = Control Group", fillcolor="#e5813901"] ;
+5 -> 7 ;
+8 [label="node #8\ncountry <= 10.5\nsamples = 24.3%\nvalue = [0.358, 0.642]\nclass = TEST Group", fillcolor="#399de571"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="node #9\nbrowser <= 4.5\nsamples = 11.6%\nvalue = [0.2, 0.8]\nclass = TEST Group", fillcolor="#399de5bf"] ;
+8 -> 9 ;
+10 [label="node #10\nsamples = 10.4%\nvalue = [0.199, 0.801]\nclass = TEST Group", fillcolor="#399de5c0"] ;
+9 -> 10 ;
+11 [label="node #11\nsamples = 1.2%\nvalue = [0.212, 0.788]\nclass = TEST Group", fillcolor="#399de5ba"] ;
+9 -> 11 ;
+12 [label="node #12\ncountry <= 13.5\nsamples = 12.7%\nvalue = [0.504, 0.496]\nclass = Control Group", fillcolor="#e5813904"] ;
+8 -> 12 ;
+13 [label="node #13\nsamples = 9.9%\nvalue = [0.506, 0.494]\nclass = Control Group", fillcolor="#e5813906"] ;
+12 -> 13 ;
+14 [label="node #14\nsamples = 2.8%\nvalue = [0.497, 0.503]\nclass = TEST Group", fillcolor="#399de503"] ;
+12 -> 14 ;
+}
